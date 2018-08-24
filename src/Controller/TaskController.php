@@ -55,6 +55,7 @@ class TaskController extends AbstractController
             $task->setDeadline($deadline);
             $task->setPriority($priority);
             $task->setCreateDate($now);
+            $task->setIsCompleted(false);
 
             $em = $this->getDoctrine()->getManager();
 
